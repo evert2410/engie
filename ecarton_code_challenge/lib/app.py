@@ -12,7 +12,6 @@ def convert():
     request_data = json.loads(request.data)
 
     converted = convert_chars(request_data)
-    print(converted)
 
     resp = Response(
         response=json.dumps(converted),
